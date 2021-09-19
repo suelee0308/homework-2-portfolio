@@ -5,8 +5,8 @@
   <title>Sue Lee's Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/reset.css">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -14,35 +14,82 @@
         <h1>Hi! I'm Sue Lee!</h1>
             <p>First name, Sue. Last name, Lee.</p>
             <p>Hopefuly, soon-to-be, full-stack developer.</p>
+        
         <nav>
-            <ul>
-                <li><a href="#" class="button">About Me</a></li>
-                <li><a href="#" class="button">Portfolio</a></li>
-                <li><a href="#" class="button">Resume</a></li>
-                <li><a href="#" class="button">Contact</a></li>
-            </ul>
+            <a href="#aboutme" class="button">About Me</a>
+            <a href="#portfolio" class="button">Portfolio</a>
+            <a href="./assets/Resume.pdf" target="_blank" class="button">Resume</a>
+            <a href="#contact" class="button">Contact</a>
         </nav>
     </header>
 
+    <section class="banner">
+        <div>
+            <h2>Cool Subtitle here</h2>
+        </div>
+    </section>
+
  
-    <main>
-        <section>About me text will go here</section>
-        <section>
-            <!-- images will go here -->
+    <main class="page-wrapper">
+        <section class="page-section" id="about"> 
+            <div>
+                <h2 class="mainheader" id="aboutme">About Me</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, architecto neque vitae ea iure nihil suscipit nulla laborum magnam quos at eveniet minima. Qui odit ipsam temporibus repudiandae saepe eveniet modi? Corporis dolore ut aspernatur deserunt harum illum neque consequatur omnis eos dolorem iste inventore sit, assumenda odio, quod vero voluptatibus laborum quibusdam veritatis minus consectetur. Aspernatur officia perspiciatis, eos dolor maxime dolorum dicta adipisci dolorem, ad amet sapiente illo sed culpa aliquam nemo? Minus laborum, nesciunt nostrum accusamus debitis in voluptatibus iusto adipisci dolores. Alias molestiae soluta praesentium iure veniam! Praesentium, maxime culpa? Saepe enim ipsam ex voluptatibus ea!</p>
+            </div>
         </section>
-        <section>contact section with multiple links</section>
+        
+        <section class="page-section" id="work">
+            <h2 class="mainheader" id="portfolio">Portfolio</h2>
+
+            <div class=relative> 
+                <a class="project-1" href="https://www.google.com" target="_blank">
+                    <div class="mainimage smallborder hover">
+                       <span class="fixed-box"><h3> Project 1</h3></span> 
+                       <span> <img class="mainimage" src="./assets/images/photo1.jpg" alt="project screenshot"/> MERN Stack</span>
+                    </div>
+                </a>
+        
+                <a href="https://www.google.com" target="_blank">
+                    <img class="image smallborder hover" src="./assets/images/photo2.jpg" alt="project screenshot"/>
+                </a>
+           
+                <a href="https://www.google.com" target="_blank">
+                    <img class="image smallborder hover" src="./assets/images/photo3.jpg" alt="project screenshot"/>
+                </a>
+         
+                <a href="https://www.google.com" target="_blank">
+                    <img class="image smallborder hover" src="./assets/images/photo4.jpg" alt="project screenshot"/>
+                </a>
+           
+                <a href="https://www.google.com" target="_blank">
+                    <img class="image smallborder hover" src="./assets/images/photo5.jpg" alt="project screenshot"/>
+                </a>
+            </div>
+        </section>
+
+        <section class="page-section contact" id="contact">
+         
+                <h2>Contact</h2>
+      
+            <div>
+                <address>
+                    <a href="#tel:+5555555555" class="contact">555.555.5555</a>
+                    <a href="#mailto:sue.lee0308@gmail.com" class="contact">sue.lee0308@gmail.com</a>
+                    <a href="https://github.com/suelee0308" class="contact">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sue-lee-b1b3aa21b/" class="contact">LinkedIn</a>
+                </address>
+            </div>
+        </section>
+
     </main>
 
-    <aside>
-        <h1>About Me</h1>
-        <h1>Portfolio</h1>
-        <h1>Resume</h1>
-        <h1>Contact</h1>
-    </aside>
 
     <footer>
         <h3>some sort of footer will go here...</h3>
     </footer>
+
 </body>
 
 </html>

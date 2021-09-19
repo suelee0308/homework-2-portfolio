@@ -1,0 +1,207 @@
+:root {
+    --main: #8f7082;
+    --light: rgb(235, 226, 226);
+    --dark: rgb(39, 38, 39);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    border-color: red;
+}
+
+h2,h3,h4, p {
+    margin: 0;
+}
+
+/*  All borders on static. Border generator used from neumorphism.io */
+.border {
+    border-radius: 54px;
+    background: #8f7082;
+    box-shadow:  31px 31px 62px #6b5462,
+             -31px -31px 62px #b38ca3;
+}
+
+.smallborder {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  17px 17px 35px #6b5462,
+                 -17px -17px 35px #b38ca3;
+    
+}
+
+/* Hyperlinks */
+
+a {
+    color: var(--maintext);
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  17px 17px 35px #6b5462,
+                 -17px -17px 35px #b38ca3;
+    border-width: 1px;
+    border-color: var(--main);
+    display: inline-block;
+    margin: 30px;
+}
+
+a:hover {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  17px 17px 35px #6b5462,
+                 -17px -17px 35px #b38ca3;
+    border-width: 1px;
+    border-color: var(--light);
+}
+
+/* --Header-- */
+
+header {
+    display: flex;
+    padding: 15px 5% 15px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--light);
+    box-shadow: 5px 5px 5px var(--light);
+
+}
+
+header h1 {
+    display: inline-block; 
+    font-size: 40px;
+    margin: 10px;
+    line-height: 1;
+    padding: 5px 2% 5px 5%;
+
+}
+
+/* --Navbar-- */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+
+nav a{
+    padding: 5px 10px;
+    margin-right: 10px;
+
+}
+
+nav a:hover {
+
+
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+/* header p {
+    font-size: 20px;
+    margin: 0px 0px 0px 15px;
+}
+
+header div {
+    float: left;
+}
+
+header nav ul {
+    height: 150px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+} */
+
+/* header nav ul li {
+    display: inline-block;
+} *
+
+
+/* images */
+
+.mainimage {
+    width: 480px;
+    height: 240px;
+    margin: 2px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image {
+    width: 480px;
+    height: 240px;
+    margin: 2px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+img:hover {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #83777e,
+             -10px -10px 25px #c2bbbb;
+    opacity: 0.7;
+}
+
+/* main */
+
+.relative {
+    position: relative;
+}
+
+.fixed-box {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > *:nth-child(h2) {
+    flex: 1 1 20%;
+}
+
+section > * {
+    flex: 1 1 50%;
+}
+
+/* responsive styling */
+ 
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 5px 0;
+        text-align:center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 5px 0;
+        text-align:center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 5px 0;
+        text-align:center;
+        justify-content: center;
+    }
+}
