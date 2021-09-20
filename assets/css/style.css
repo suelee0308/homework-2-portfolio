@@ -19,18 +19,25 @@ h2,h3,h4, p {
 }
 
 /*  All borders on static. Border generator used from neumorphism.io */
-.border {
-    border-radius: 54px;
+
+.bigcardimage {
+    border-radius: 35px;
     background: #8f7082;
-    box-shadow:  31px 31px 62px #6b5462,
-             -31px -31px 62px #b38ca3;
+    box-shadow:  10px 10px 25px #7a5f6f,
+             -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
 }
 
-.smallborder {
+.smallcardimage {
+    border-radius: 35px;
     background: #8f7082;
-    box-shadow:  17px 17px 35px #6b5462,
-                 -17px -17px 35px #b38ca3;
-    
+    box-shadow:  10px 10px 25px #7a5f6f,
+             -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -56,21 +63,13 @@ header h1 {
 
 /* banner */
 
-.banner {
-    padding-top: 10px;
-    color: var(--dark);
-    font-weight: lighter;
-}
-
 .bannerimage {
     height: 150px;
     width: 100%;
     object-fit: cover;
     position: relative;
+    margin: 0px;
 }
- .bannerborder {
-     border-color: var(--main)
- }
 
 .bannername {
     position: absolute;
@@ -82,10 +81,13 @@ header h1 {
 }
 
 .bannerdescription {
+    display: flex;
+    justify-items: flex-end;
     position: absolute;
     margin-top: -3.5em;
     margin-left: 1em;
     font-size: 1.5em;
+    font-weight: lighter;
     color: var(--light);
     background-color: var(--main);
     padding: 0.8em;
@@ -135,34 +137,6 @@ nav {
     color: var(--dark);
 }
 
-
-/* images */
-
-.mainimage {
-    width: 80%;
-    margin: 35px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 35px;
-}
-
-.image {
-    width: 30%;
-    margin: 35px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 35px;
-    z-index: -1;
-}
-
-cardimg:hover {
-    border-radius: 35px;
-    background: #8f7082;
-    box-shadow:  10px 10px 25px #83777e,
-             -10px -10px 25px #c2bbbb;
-    opacity: 0.7;
-}
-
 /* main */
 
 main {
@@ -181,7 +155,7 @@ main {
     font-weight: 300; 
 }
 
-.fixed-box {
+/* .fixed-box {
     margin: 3%;
     height: 2em;
     width: 100px;
@@ -199,16 +173,27 @@ main {
     bottom: 0;
     left: 0;
     top: 40%;
-}
-
-
+} */
 
 section {
     display: flex;
     flex-wrap: wrap;
+}
+
+#about {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
+#portfolio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 section > h2 {
     flex: 1 1 30%;
 }
@@ -217,30 +202,81 @@ section > * {
     flex: 1 1 70%;
 }
 
-section > a {
+/* section > a {
     margin-left: 2em;
-}
+} */
 
-p {
-    margin-left: 10px;
-    margin-right: 2em;
-}
-
+ .aboutmetext {
+    margin-right: 2.5em; 
+    margin-left: 2.5em;
+ }
 
 /* cards */
 
-/* surf {
-    background-image: "./assets/images/photo1.jpg";
+.bigcardimage {
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.flex-page {
-
+/* .portfoliosection {
+    display: flex;
+    flex: wrap;
 }
 
-.smallcard > *{
-    flex: 1 1 50%;
+.flex50 {
+    flex: 0 1 50%;
+}
+
+.relative {
+    position: relative;
 } */
+.bigcardimage:hover {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #83777e,
+             -10px -10px 25px #c2bbbb;
+    opacity: 0.7;
+}
 
+.smallcardimage:hover {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #83777e,
+             -10px -10px 25px #c2bbbb;
+    opacity: 0.7;
+}
+
+.card {
+    width: 12rem;
+    height: 5.5rem;
+    background-color: var(--main);
+    margin: 5rem 0 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    z-index: 1;
+}
+
+
+.smallcardimage {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 20px;
+}
 
 /* address */
 
@@ -259,9 +295,9 @@ address > a{
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 16px;
-    background: #745467;
-    box-shadow:  7px 7px 14px #634758,
-                 -7px -7px 14px #856176;
+    background: #6E4C5F;
+    box-shadow:  7px 7px 20px #634758,
+                 -7px -7px 20px #8B687C;
     border-width: 1px;
     border-color: var(--main);
     margin: 30px;
@@ -282,7 +318,7 @@ address > a:focus {
 
 /* responsive styling */
  
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1099px) {
     header {
         padding: 0 0 5px 0;
         text-align:center;
