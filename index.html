@@ -14,7 +14,9 @@
 <!-- HEADER -->
 
     <header>
-        <h1>Hi! I'm Sue Lee!</h1>
+        <div>
+            <h1>Hi! I'm Sue Lee!</h1>
+        </div>
         <nav>
             <a href="#aboutme" class="button">About Me</a>
             <a href="#portfolio" class="button">Portfolio</a>
@@ -28,13 +30,12 @@
 
     <section class="banner">
         <div>
-            <h2>First name, Sue. Last name, Lee.</h2>
-            <h2>Hopefuly, soon-to-be, full-stack developer.</h2>
-            <!-- <span><img class="image" src="./assets/images/photo1.jpg"></span> -->
+            <img class="bannerimage" src="./assets/images/bannerphoto.jpg"/>
+            <p class="bannerdescription">Hopefuly, soon-to-be, full-stack developer.</p>
         </div>
     </section>
 
-    <main class="page-wrapper">
+    <main>
 
 
  <!-- ABOUT ME SECTION  -->
@@ -48,8 +49,16 @@
         
 <!-- PORTFOLIO SECTION -->
 
-        <section class="page-section" id="work">
+        <section class="page-section" id="portfolio">
+
             <h2 class="mainheader" id="portfolio">Portfolio</h2>
+
+            <section class="banner">
+                <div>
+                    <img class="bannerimage" src="./assets/images/photo1.jpg"/>
+                    <p class="bannerdescription">Project 1</p>
+                </div>
+            </section>
 
             <!-- <div class="bigcard">
                 <div class="cardtext"></div>
@@ -65,7 +74,7 @@
             </div> -->
 
 
-
+<!-- 
 
             <div class=relative> 
                 <div>
@@ -73,7 +82,7 @@
                     <img class="mainimage smallborder hover" src="./assets/images/photo1.jpg" alt="project screenshot"/>
                     <div>
                        <span class="fixed-box"><h3> Project 1</h3></span> 
-                       <span class="fixed-box">MERN Stack</span>
+                       <span class="fixed-box-description">MERN Stack</span>
                     </div>
                 </a>
                 </div>
@@ -94,26 +103,25 @@
                     <img class="image smallborder hover" src="./assets/images/photo5.jpg" alt="project screenshot"/>
                 </a>
             </div>
-        </section>
+        </section> -->
 
 <!-- CONTACT INFORMATION SECTION-->
 
-        <section id="contact">
-                <h2 class="mainheader">Contact</h2>
-            <div>
-                <address>
-                    <a href="#tel:+5555555555" class="button">555.555.5555</a>
-                    <a href="#mailto:sue.lee0308@gmail.com" class="button">sue.lee0308@gmail.com</a>
-                    <a href="https://github.com/suelee0308" class="button" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/sue-lee-b1b3aa21b/" class="button" target="_blank">LinkedIn</a>
-                </address>
-            </div>
-        </section>
     </main>
 
 
     <footer>
-        <h3>some sort of footer will go here...</h3>
+        <section id="contact">
+            <h2 class="mainheader contactcenter">Contact</h2>
+        <div>
+            <address>
+                <a href="#tel:+5555555555" class="button">555.555.5555</a>
+                <a href="#mailto:sue.lee0308@gmail.com" class="button">sue.lee0308@gmail.com</a>
+                <a href="https://github.com/suelee0308" class="button" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sue-lee-b1b3aa21b/" class="button" target="_blank">LinkedIn</a>
+            </address>
+        </div>
+    </section>
     </footer>
 
 </body>
