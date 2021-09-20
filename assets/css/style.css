@@ -84,14 +84,13 @@ header h1 {
     display: flex;
     justify-items: flex-end;
     position: absolute;
+    right: 10px;
     margin-top: -3.5em;
-    margin-left: 1em;
     font-size: 1.5em;
     font-weight: lighter;
     color: var(--light);
     background-color: var(--main);
     padding: 0.8em;
-    margin-right: 0px;
 }
 
 .banner p {
@@ -147,7 +146,8 @@ main {
 .mainheader {
     display: inline-block;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 20px;
     color: var(--light);
     border-right: 7px solid;
     border-color: var(--dark);
@@ -186,7 +186,6 @@ section {
 }
 
 #portfolio {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -221,18 +220,11 @@ section > * {
     margin-bottom: 30px;
 }
 
-/* .portfoliosection {
+.portfoliosection {
     display: flex;
     flex: wrap;
 }
 
-.flex50 {
-    flex: 0 1 50%;
-}
-
-.relative {
-    position: relative;
-} */
 .bigcardimage:hover {
     border-radius: 35px;
     background: #8f7082;
@@ -260,7 +252,7 @@ section > * {
     align-items: center;
     position: absolute;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 0 9px 9px 0;
     color: var(--light);
     font-size: 1.5rem;
     font-weight: lighter;
@@ -268,7 +260,7 @@ section > * {
 }
 
 
-.smallcardimage {
+/* .smallcardimage {
     display: flex;
     flex-wrap: wrap;
     height: 200px;
@@ -276,16 +268,31 @@ section > * {
     object-fit: cover;
     position: relative;
     margin-bottom: 20px;
-}
+} */
+
+/* .relative {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .flex100 {
+    flex: 1 1 100%;
+} */
+
+/* .flex50 {
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+} */
 
 /* address */
+
 
 address {
     margin: 5px;
     color: var(--light);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 address > a{
