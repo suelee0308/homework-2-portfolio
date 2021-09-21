@@ -14,33 +14,6 @@ body {
     padding: 0;
 }
 
-h2,h3,h4, p {
-    margin: 0;
-}
-
-/*  All borders on static. Border generator used from neumorphism.io */
-
-.bigcardimage {
-    border-radius: 35px;
-    background: #8f7082;
-    box-shadow:  10px 10px 25px #7a5f6f,
-             -10px -10px 25px #a48196;
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.smallcardimage {
-    border-radius: 35px;
-    background: #8f7082;
-    box-shadow:  10px 10px 25px #7a5f6f,
-             -10px -10px 25px #a48196;
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-
 /* --Header-- */
 
 header {
@@ -71,15 +44,6 @@ header h1 {
     margin: 0px;
 }
 
-.bannername {
-    position: absolute;
-    margin-top: -4em;
-    margin-left: 1em;
-    color: var(--light);
-    font-size: 1.5em;
-    line-height: 5px;
-}
-
 .bannerdescription {
     display: flex;
     justify-items: flex-end;
@@ -93,10 +57,6 @@ header h1 {
     padding: 0.8em;
 }
 
-.banner p {
-    text-align: right;
-}
-
 /* --Navbar-- */
 nav {
     display: flex;
@@ -105,7 +65,7 @@ nav {
     justify-content: center;
 }
 
-/* all links */
+/* all button links */
 
 .button{
     color: var(--light);
@@ -155,26 +115,6 @@ main {
     font-weight: 300; 
 }
 
-/* .fixed-box {
-    margin: 3%;
-    height: 2em;
-    width: 100px;
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    top: 40%;
-}
-
-.fixed-box-description {
-    margin: 1%;
-    height: 2em;
-    width: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 40%;
-} */
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -212,13 +152,21 @@ section > * {
 
 /* cards */
 
-.bigcardimage {
+/* .bigcardimage {
     height: 200px;
     width: 90%;
     object-fit: cover;
     position: relative;
     margin-bottom: 30px;
 }
+
+.smallcardimage {
+    height: 200px;
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 30px;
+} */
 
 .portfoliosection {
     display: flex;
@@ -270,22 +218,55 @@ section > * {
     margin-bottom: 20px;
 } */
 
-/* .relative {
+.relative {
     display: flex;
-    flex-wrap: wrap;
-} */
+    flex: 0 1 70vw;
+}
 
 /* .flex100 {
     flex: 1 1 100%;
 } */
 
-/* .flex50 {
-    flex: 1 1 50%;
+.flex50 {
+    flex: 0 1 50vw;
     flex-wrap: wrap;
-} */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bigcardimage {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #7a5f6f,
+             -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.smallcardimage {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #7a5f6f,
+             -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center; 
+    height: 200px;
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
 
 /* address */
-
 
 address {
     margin: 5px;
@@ -347,20 +328,6 @@ address > a:focus {
         text-align:center;
         flex-direction: row;
         justify-content: center;
-    }
-}
-
-@media screen and (min-width:980px) {
-    .card-column {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .card-column {
-        flex: 0 0 50%;
-        max-width: 50%;
     }
 }
 
