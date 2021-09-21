@@ -152,6 +152,10 @@ section > * {
     width: 100px;
 }
 
+.portfoliocards {
+    width: 100%;
+}
+
 .bigcardimage:hover {
     border-radius: 35px;
     background: #8f7082;
@@ -190,14 +194,6 @@ section > * {
 .relative {
     display: flex;
     flex: 0 1 70vw;
-}
-
-
-.flex50 {
-    flex: 0 1 50vw;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .bigcardimage {
