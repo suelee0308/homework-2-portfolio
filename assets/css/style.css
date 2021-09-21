@@ -14,39 +14,6 @@ body {
     padding: 0;
 }
 
-h2,h3,h4, p {
-    margin: 0;
-}
-
-/*  All borders on static. Border generator used from neumorphism.io */
-
-.bigcardimage {
-    border-radius: 35px;
-    background: #8f7082;
-    box-shadow:  10px 10px 25px #7a5f6f,
-             -10px -10px 25px #a48196;
-    margin-left: 25px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width: 90%;
-    object-fit: cover;
-    position: relative;
-    }
-}
-
-/* .smallcardimage {
-    border-radius: 35px;
-    background: #8f7082;
-    box-shadow:  10px 10px 25px #7a5f6f,
-             -10px -10px 25px #a48196;
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-} */
-
-
 /* --Header-- */
 
 header {
@@ -77,15 +44,6 @@ header h1 {
     margin: 0px;
 }
 
-.bannername {
-    position: absolute;
-    margin-top: -4em;
-    margin-left: 1em;
-    color: var(--light);
-    font-size: 1.5em;
-    line-height: 5px;
-}
-
 .bannerdescription {
     display: flex;
     justify-items: flex-end;
@@ -99,10 +57,6 @@ header h1 {
     padding: 0.8em;
 }
 
-.banner p {
-    text-align: right;
-}
-
 /* --Navbar-- */
 nav {
     display: flex;
@@ -111,7 +65,7 @@ nav {
     justify-content: center;
 }
 
-/* all links */
+/* all button links */
 
 .button{
     color: var(--light);
@@ -152,14 +106,14 @@ main {
 .mainheader {
     display: inline-block;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 20px;
     color: var(--light);
     border-right: 7px solid;
     border-color: var(--dark);
     font-size: 1.5em;
     font-weight: 300; 
 }
-
 
 section {
     display: flex;
@@ -172,7 +126,6 @@ section {
 }
 
 #portfolio {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -188,13 +141,16 @@ section > * {
     flex: 1 1 70%;
 }
 
-
  .aboutmetext {
     margin-right: 2.5em; 
     margin-left: 2.5em;
  }
 
 /* cards */
+
+.portfoliosection {
+    width: 100px;
+}
 
 .bigcardimage:hover {
     border-radius: 35px;
@@ -213,19 +169,50 @@ section > * {
 }
 
 .card {
+    width: 12rem;
     height: 5.5rem;
     background-color: var(--main);
     margin: 5rem 0 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     position: absolute;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 0 9px 9px 0;
     color: var(--light);
     font-size: 1.5rem;
     font-weight: lighter;
     z-index: 1;
 }
 
-.portfoliocards {
+
+.relative {
+    display: flex;
+    flex: 0 1 70vw;
+}
+
+
+.flex50 {
+    flex: 0 1 50vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bigcardimage {
+    border-radius: 35px;
+    background: #8f7082;
+    box-shadow:  10px 10px 25px #7a5f6f,
+             -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .smallcardimage {
@@ -233,11 +220,14 @@ section > * {
     background: #8f7082;
     box-shadow:  10px 10px 25px #7a5f6f,
              -10px -10px 25px #a48196;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center; 
     height: 200px;
-    width: 35%;
+    width: 40%;
     object-fit: cover;
     position: relative;
-    margin: 10px;
+    margin-bottom: 30px;
 }
 
 /* address */
@@ -247,7 +237,7 @@ address {
     color: var(--light);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 address > a{
@@ -302,14 +292,6 @@ address > a:focus {
         text-align:center;
         flex-direction: row;
         justify-content: center;
-    }
-}
-
-
-@media screen and (min-width:768px) {
-    .card-column {
-        flex: 0 0 50%;
-        max-width: 50%;
     }
 }
 

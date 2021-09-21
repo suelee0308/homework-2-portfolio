@@ -21,4 +21,4 @@
 
 ## Screenshot of deployed website:
 
-![Screenshot of deployed website"](./assets/images/INSERTSCREENSHOTJPGHERE)
+![Screenshot of deployed website"](./assets/images/screencapture-hw2.png)
