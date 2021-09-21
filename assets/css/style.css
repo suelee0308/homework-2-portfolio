@@ -148,13 +148,14 @@ section > * {
 
 /* cards */
 
-.portfoliosection {
+/* .portfoliosection {
     width: 100px;
-}
+} */
 
 .portfoliocards {
     width: 100%;
 }
+
 
 .bigcardimage:hover {
     border-radius: 35px;
@@ -172,28 +173,32 @@ section > * {
     opacity: 0.7;
 }
 
-.card {
+.labelheading {
     width: 12rem;
     height: 5.5rem;
     background-color: var(--main);
-    margin: 5rem 0 0 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    margin: 5.5rem 0 0 25px;
     position: absolute;
     padding: 20px;
     border-radius: 0 9px 9px 0;
     color: var(--light);
     font-size: 1.5rem;
-    font-weight: lighter;
     z-index: 1;
+    display: inline-block;
 }
 
-
-.relative {
-    display: flex;
-    flex: 0 1 70vw;
+.labeldescription {
+    width: 12rem;
+    height: 5.5rem;
+    margin: 7.25rem 0 0 25px;
+    position: absolute;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--light);
+    opacity: 1;
+    z-index: 1;
+    display: inline-block;
 }
 
 .bigcardimage {
@@ -204,7 +209,7 @@ section > * {
     margin-left: 25px;
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 250px;
     width: 90%;
     object-fit: cover;
     position: relative;
@@ -220,10 +225,19 @@ section > * {
     display: flex;
     justify-content: center; 
     height: 200px;
-    width: 40%;
+    width: 43.5%;
     object-fit: cover;
     position: relative;
     margin-bottom: 30px;
+    display: inline-block;
+}
+
+#project4label {
+    display:flex;
+}
+
+#project4description {
+    display:flex;
 }
 
 /* address */
@@ -280,6 +294,20 @@ address > a:focus {
         text-align:center;
         justify-content: center;
     }
+
+    .labelheading {
+        width: 11rem;
+        height: 5rem;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .labeldescription {
+        width: 11rem;
+        height: 5rem;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -289,10 +317,32 @@ address > a:focus {
         flex-direction: row;
         justify-content: center;
     }
-}
 
-@media screen and (max-width: 576px) {
     .bannerdescription {
-       margin-top: -5em;
+        margin-top: -5em;
+     }
+
+     .bigcardimage {
+        width: 85%;
+    }
+
+     .smallcardimage {
+         width: 85%;
+     }
+
+    .labelheading {
+        width: 8rem;
+        height: 4rem;
+        padding: 6px;
+        font-size: 1rem;
+        display: flex;
+    }
+    
+    .labeldescription {
+        width: 8rem;
+        height: 4rem;
+        padding: 8px;
+        font-size: 1rem;
+        display: flex;
     }
 }
