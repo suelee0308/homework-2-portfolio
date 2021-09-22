@@ -2,7 +2,7 @@
 
 ## About the project
 
-1. Header section contains name and a nav bar. Nav bar's links/buttons jump to their respective section in the screen. The last resume button opens a pdf in a new tab. 
+1. Header section contains my avatar, name and a nav bar. Nav bar's links/buttons jump to their respective section in the screen. The last resume button opens a pdf in a new tab. 
 
 2. Banner below the header contains a background image with a text box on top.
 
