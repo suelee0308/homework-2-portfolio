@@ -173,7 +173,7 @@ section > * {
 }
 
 .labelheading {
-    width: 12rem;
+    width: 15rem;
     height: 5.5rem;
     background-color: var(--main);
     margin: 5.5rem 0 0 25px;
@@ -334,7 +334,7 @@ address > a:focus {
      }
 
     .labelheading {
-        width: 8rem;
+        width: 9rem;
         height: 4rem;
         padding: 6px;
         font-size: 1rem;
