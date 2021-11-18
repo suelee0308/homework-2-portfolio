@@ -1,4 +1,4 @@
-# homework-2-portfolio
+# Sue Lee Portfolio
 
 ## About the project
 
