@@ -145,10 +145,19 @@ section > h2 {
 section > * {
     flex: 1 1 70%;
 }
+.aboutmediv {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 
  .aboutmetext {
     margin-right: 2.5em; 
     margin-left: 2.5em;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--light);
+    display: inline;
  }
 
 .portfoliocards {
@@ -181,7 +190,7 @@ section > * {
     padding: 20px;
     border-radius: 0 9px 9px 0;
     color: var(--light);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     z-index: 1;
     display: inline-block;
 }
@@ -192,7 +201,7 @@ section > * {
     margin: 7.25rem 0 0 25px;
     position: absolute;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: lighter;
     color: var(--light);
     opacity: 1;
@@ -229,6 +238,13 @@ section > * {
     position: relative;
     margin-bottom: 30px;
     display: inline-block;
+}
+
+.headshot {
+    max-height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline;
 }
 
 #project4label {
@@ -298,14 +314,14 @@ address > a:focus {
         width: 11rem;
         height: 5rem;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .labeldescription {
         width: 11rem;
         height: 5rem;
         padding: 10px;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     header h1 img {
@@ -337,15 +353,15 @@ address > a:focus {
         width: 9rem;
         height: 4rem;
         padding: 6px;
-        font-size: 1rem;
+        font-size: .8rem;
         display: flex;
     }
     
     .labeldescription {
         width: 8rem;
         height: 4rem;
-        padding: 8px;
-        font-size: 1rem;
+        padding: 3px;
+        font-size: .6rem;
         display: flex;
     }
 
