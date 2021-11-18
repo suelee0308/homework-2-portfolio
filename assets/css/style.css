@@ -245,6 +245,7 @@ section > * {
     margin: 20px;
     border-radius: 10px;
     display: inline;
+    flex-basis: 20%;
 }
 
 #project4label {
@@ -303,7 +304,7 @@ address > a:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     header {
         padding: 0 0 5px 0;
         text-align:center;
@@ -327,6 +328,9 @@ address > a:focus {
     header h1 img {
         margin-bottom: -2rem;
     }
+    .hide {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -335,6 +339,10 @@ address > a:focus {
         text-align:center;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .mainheader {
+        padding: 8px;
     }
 
     .bannerdescription {
