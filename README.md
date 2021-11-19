@@ -15,7 +15,7 @@
 
 ## Deployed Websites
 
-- Deployed website: <https://suelee0308.github.io/homework-2-portfolio/>
+- Deployed website: <https://suelee0308.github.io/portfolio/>
 - GitHub link: <https://github.com/suelee0308/homework-2-portfolio>
 
 
